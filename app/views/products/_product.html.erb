@@ -1,0 +1,21 @@
+<div id="<%= dom_id product %>" class="shadow-md rounded-lg flex flex-col justify-between w-1/5">
+
+  <div class="relative rounded-t-lg item__img">
+    <%= image_tag 'product_not_like.png', class: 'absolute right-5 top-5 cursor-pointer' %>
+    <%= image_tag 'product_stab.jpg', class: 'rounded-lg item__img-product' %>
+  </div>
+
+  <p class="m-4 font-semibold text-lg">
+    <%= product.title %>
+  </p>
+
+  <div class="mx-4 mt-0 mb-4 font-bold text-xl flex justify-between items-center">
+    <p class="text-yellow-600">
+      <%= product.price %> ₽
+    </p>
+
+    <div class="bg-black p-2 w-12 h-12 flex justify-center items-center cursor-pointer rounded-full">
+      <%= image_tag 'shop_bag.png'%>
+    </div>
+  </div>
+</div>
